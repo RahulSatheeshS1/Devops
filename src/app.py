@@ -4,7 +4,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route("/details")
+@app.route("/rahul-details")
 def getDetails():
     host_name = socket.gethostname()
     host_ip = socket.gethostbyname(host_name)
@@ -18,4 +18,4 @@ def health():
         status="UP"
     )
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0', port=5000)
+    app.run(debug=True,host='0.0.0.0', port=8089)
