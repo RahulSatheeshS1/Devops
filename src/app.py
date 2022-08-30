@@ -4,7 +4,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route("/details")
+@app.route("/rahul-details")
 def getDetails():
     host_name = socket.gethostname()
     host_ip = socket.gethostbyname(host_name)
@@ -12,7 +12,7 @@ def getDetails():
         HostName=host_name,
         IpAddress=host_ip
     )
-@app.route("/health")
+@app.route("/api-health")
 def health():
     return jsonify(
         status="UP"
