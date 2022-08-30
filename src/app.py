@@ -1,5 +1,3 @@
-import socket
-from unicodedata import name
 from flask import Flask, jsonify
 
 app = Flask(__name__)
